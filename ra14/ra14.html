@@ -54,8 +54,8 @@
 
           <li><a href="ra11/ra11.html">RA11</a></li>
           <li><a href="../ra12/ra12.html">RA12</a></li>
-          <li><a href="../ra13/ra13.html" >RA13</a></li>
-          <li><a href="../ra14/ra14.html"class="active">RA14</a></li>
+          <li><a href="../ra13/ra13.html">RA13</a></li>
+          <li><a href="../ra14/ra14.html" class="active">RA14</a></li>
           <li><a href="../ra15/ra15.html">RA15</a></li>
           <li><a href="../ra16/ra16.html">RA16</a></li>
           <li><a href="../ra17/ra17.html">RA17</a></li>
@@ -64,8 +64,8 @@
       </nav>
 
 
-          
-        
+
+
       </nav>
 
     </div>
@@ -92,136 +92,151 @@
 
     <section class="intro">
       <div class="container">
-          <h2>Introducció</h2>
-          <p>La generació de codi intermedi és un pas fonamental en el procés de compilació i execució de programes en entorns moderns. Aquest codi intermedi actua com una capa d’abstracció entre el codi font escrit pel desenvolupador i el codi màquina específic de cada plataforma. Les màquines virtuals (com la JVM de Java o la CLR de .NET) utilitzen aquest codi intermedi per garantir la portabilitat i l’eficiència en múltiples sistemes. En aquest apartat, analitzarem les característiques principals d’aquesta tècnica, els avantatges que ofereix i com s’integra amb les màquines virtuals.
-          </p>
+        <h2>Introducció</h2>
+        <p>La generació de codi intermedi és un pas fonamental en el procés de compilació i execució de programes en
+          entorns moderns. Aquest codi intermedi actua com una capa d’abstracció entre el codi font escrit pel
+          desenvolupador i el codi màquina específic de cada plataforma. Les màquines virtuals (com la JVM de Java o la
+          CLR de .NET) utilitzen aquest codi intermedi per garantir la portabilitat i l’eficiència en múltiples
+          sistemes. En aquest apartat, analitzarem les característiques principals d’aquesta tècnica, els avantatges que
+          ofereix i com s’integra amb les màquines virtuals.
+        </p>
       </div>
-  </section>
+    </section>
 
-  <section class="concepts">
+    <section class="concepts">
       <div class="container">
-          <h3>1. Què és el codi intermedi?</h3>
+        <h3>1. Què és el codi intermedi?</h3>
 
-          <div class="concept">
-              
-              <p>El <strong>codi intermedi</strong> és una representació del programa font que no és directament executable per la CPU, però que està dissenyat per ser interpretat o compilat dinàmicament per una màquina virtual. Aquest codi sol tenir un format estandarditzat i independent de l’arquitectura de la màquina física.</p>
+        <div class="concept">
 
-              <p>Exemples de codi intermedi:</p>
+          <p>El <strong>codi intermedi</strong> és una representació del programa font que no és directament executable
+            per la CPU, però que està dissenyat per ser interpretat o compilat dinàmicament per una màquina virtual.
+            Aquest codi sol tenir un format estandarditzat i independent de l’arquitectura de la màquina física.</p>
 
-              <p>Bytecode de Java (.class): Utilitzat per la JVM.</p>
-              <p>CIL (Common Intermediate Language) de .NET: Executat per la CLR.</p>
-              <p>LLVM IR: Usat en el ecosistema LLVM per a optimitzacions multiplataforma.</p>
+          <p>Exemples de codi intermedi:</p>
 
-          </div>
+          <p>Bytecode de Java (.class): Utilitzat per la JVM.</p>
+          <p>CIL (Common Intermediate Language) de .NET: Executat per la CLR.</p>
+          <p>LLVM IR: Usat en el ecosistema LLVM per a optimitzacions multiplataforma.</p>
 
-          <div class="concept">
-              <h3>2. Característiques principals del codi intermedi</h3>
-              <p>a) Portabilitat
-                El codi intermedi permet que un programa es pugui executar en qualsevol plataforma que disposi d’una màquina virtual compatible. Per exemple, un arxiu .class de Java pot executar-se en Windows, Linux o macOS sense necessitat de recompilar-lo.</p>
+        </div>
 
-              <p>b) Abstracció de l’hardware
-                Les instruccions del codi intermedi són d’alt nivell i no depenen de registres o instruccions específiques de la CPU. Això simplifica la implementació de les màquines virtuals.
-                </p>
+        <div class="concept">
+          <h3>2. Característiques principals del codi intermedi</h3>
+          <p>a) Portabilitat
+            El codi intermedi permet que un programa es pugui executar en qualsevol plataforma que disposi d’una màquina
+            virtual compatible. Per exemple, un arxiu .class de Java pot executar-se en Windows, Linux o macOS sense
+            necessitat de recompilar-lo.</p>
 
-              <p>c) Optimització multiplataforma
-                El codi intermedi permet aplicar optimitzacions generals abans de la traducció final a codi màquina. Per exemple, la JVM aplica optimitzacions en temps d’execució (JIT Compilation).
-                </p>
+          <p>b) Abstracció de l’hardware
+            Les instruccions del codi intermedi són d’alt nivell i no depenen de registres o instruccions específiques
+            de la CPU. Això simplifica la implementació de les màquines virtuals.
+          </p>
 
-              <p>d) Seguretat
-                Les màquines virtuals poden analitzar el codi intermedi per detectar comportaments maliciosos abans d’executar-lo. Això inclou verificació de tipus o control d’accés a memòria.
-                </p>
-                <table class="table table-striped">
-                  <caption>Taula 1: Comparativa entre codi intermedi i codi màquina</caption>
-                  <thead>
-                    <tr>
-                      <th>Característica</th>
-                      <th>Codi intermedi</th>
-                      <th>Codi màquina</th>
-                    </tr>
-                  </thead>
-                  <tbody>
-                    <tr>
-                      <td>Portabilitat</td>
-                      <td>Alta (cross-platform)</td>
-                      <td>Baixa (específic)</td>
-                    </tr>
-                    <tr>
-                      <td>Nivell d'abstracció</td>
-                      <td>Alt</td>
-                      <td>Baix (hardware)</td>
-                    </tr>
-                    <tr>
-                      <td>Optimitzacions</td>
-                      <td>Genèriques</td>
-                      <td>Específiques de CPU</td>
-                    </tr>
-                    <tr>
-                      <td>Seguretat integrada</td>
-                      <td>Sí (anàlisi previ)</td>
-                      <td>No</td>
-                    </tr>
-                  </tbody>
-                </table>
-          </div>
+          <p>c) Optimització multiplataforma
+            El codi intermedi permet aplicar optimitzacions generals abans de la traducció final a codi màquina. Per
+            exemple, la JVM aplica optimitzacions en temps d’execució (JIT Compilation).
+          </p>
 
-          <div class="concept">
-              <h3>3. Funcionament de les màquines virtuals (MV)</h3>
-              <p>Les màquines virtuals actuen com una capa d’execució que tradueix el codi intermedi a instruccions natives. Hi ha dos enfocaments principals:</p>
+          <p>d) Seguretat
+            Les màquines virtuals poden analitzar el codi intermedi per detectar comportaments maliciosos abans
+            d’executar-lo. Això inclou verificació de tipus o control d’accés a memòria.
+          </p>
+          <table class="table table-striped">
+            <caption>Taula 1: Comparativa entre codi intermedi i codi màquina</caption>
+            <thead>
+              <tr>
+                <th>Característica</th>
+                <th>Codi intermedi</th>
+                <th>Codi màquina</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>Portabilitat</td>
+                <td>Alta (cross-platform)</td>
+                <td>Baixa (específic)</td>
+              </tr>
+              <tr>
+                <td>Nivell d'abstracció</td>
+                <td>Alt</td>
+                <td>Baix (hardware)</td>
+              </tr>
+              <tr>
+                <td>Optimitzacions</td>
+                <td>Genèriques</td>
+                <td>Específiques de CPU</td>
+              </tr>
+              <tr>
+                <td>Seguretat integrada</td>
+                <td>Sí (anàlisi previ)</td>
+                <td>No</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
 
-              <p>a) Interpretació
-                La MV llegeix i executa el codi intermedi línia per línia. És més lent però permet una major flexibilitat (ex: Python).
-                </p>
+        <div class="concept">
+          <h3>3. Funcionament de les màquines virtuals (MV)</h3>
+          <p>Les màquines virtuals actuen com una capa d’execució que tradueix el codi intermedi a instruccions natives.
+            Hi ha dos enfocaments principals:</p>
 
-              <p>b) Compilació JIT (Just-In-Time)
-                La MV compila parts del codi intermedi a codi màquina durant l’execució, emmagatzemant els resultats per a usos futurs. Això millora significativament el rendiment (ex: JVM, CLR).
-                </p>
-                <table class="table table-striped">
-                  <caption>Taula 2: Tipus de màquines virtuals</caption>
-                  <thead>
-                    <tr>
-                      <th>Tipus MV</th>
-                      <th>Exemple</th>
-                      <th>Avantatges</th>
-                      <th>Desavantatges</th>
-                    </tr>
-                  </thead>
-                  <tbody>
-                    <tr>
-                      <td>Interpretada</td>
-                      <td>Python VM</td>
-                      <td>Senzillesa, depuració fàcil</td>
-                      <td>Lent</td>
-                    </tr>
-                    <tr>
-                      <td>JIT</td>
-                      <td>JVM</td>
-                      <td>Ràpid després de l’inici</td>
-                      <td>Consum de memòria</td>
-                    </tr>
-                    <tr>
-                      <td>Ahead-of-Time</td>
-                      <td>.NET AOT</td>
-                      <td>Execució ràpida</td>
-                      <td>Menys portabilitat</td>
-                    </tr>
-                  </tbody>
-                </table>
+          <p>a) Interpretació
+            La MV llegeix i executa el codi intermedi línia per línia. És més lent però permet una major flexibilitat
+            (ex: Python).
+          </p>
 
-              
-          </div>
+          <p>b) Compilació JIT (Just-In-Time)
+            La MV compila parts del codi intermedi a codi màquina durant l’execució, emmagatzemant els resultats per a
+            usos futurs. Això millora significativament el rendiment (ex: JVM, CLR).
+          </p>
+          <table class="table table-striped">
+            <caption>Taula 2: Tipus de màquines virtuals</caption>
+            <thead>
+              <tr>
+                <th>Tipus MV</th>
+                <th>Exemple</th>
+                <th>Avantatges</th>
+                <th>Desavantatges</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>Interpretada</td>
+                <td>Python VM</td>
+                <td>Senzillesa, depuració fàcil</td>
+                <td>Lent</td>
+              </tr>
+              <tr>
+                <td>JIT</td>
+                <td>JVM</td>
+                <td>Ràpid després de l’inici</td>
+                <td>Consum de memòria</td>
+              </tr>
+              <tr>
+                <td>Ahead-of-Time</td>
+                <td>.NET AOT</td>
+                <td>Execució ràpida</td>
+                <td>Menys portabilitat</td>
+              </tr>
+            </tbody>
+          </table>
+
+
+        </div>
       </div>
-  </section>
+    </section>
 
-  <section class="process">
+    <section class="process">
       <div class="container">
-          <h3>4. Fases de la generació de codi intermedi</h3>
-          <p>Anàlisi lèxic i sintàctic: Es tradueix el codi font a un arbre sintàctic (AST).
-          </p>
-          <p>Anàlisi lèxic i sintàctic: Es tradueix el codi font a un arbre sintàctic (AST).
-          </p>
-          <p>Optimització: S’apliquen tècniques com eliminació de codi mort o inlining de funcions.</p>
-          <p>Execució a la MV: La màquina virtual interpreta o compila el codi intermedi.</p>
-          <pre><code>
+        <h3>4. Fases de la generació de codi intermedi</h3>
+        <p>Anàlisi lèxic i sintàctic: Es tradueix el codi font a un arbre sintàctic (AST).
+        </p>
+        <p>Anàlisi lèxic i sintàctic: Es tradueix el codi font a un arbre sintàctic (AST).
+        </p>
+        <p>Optimització: S’apliquen tècniques com eliminació de codi mort o inlining de funcions.</p>
+        <p>Execució a la MV: La màquina virtual interpreta o compila el codi intermedi.</p>
+        <pre><code>
             public class Example {
                 public static void main(String[] args) {
                     int a = 5;
@@ -229,30 +244,30 @@
                 }
             }
                     </code></pre>
-                    <h4>Bytecode equivalent (simplificat)</h4>
-                    <pre><code>
+        <h4>Bytecode equivalent (simplificat)</h4>
+        <pre><code>
             aload_0
             bipush 5
             invokevirtual #2  // Method java/io/PrintStream.println:(I)V
                     </code></pre>
 
       </div>
-  </section>
+    </section>
 
-  <section class="concept">
+    <section class="concept">
       <div class="container">
-          <h3>5. Avantatges i desavantatges</h3>
-          <p>Avantatges:</p>
-          <p>Independència de plataforma: Escriu una vegada, executa en qualsevol lloc (Write Once, Run Anywhere).</p>
-          <p>Seguretat millorada: La MV controla l’accés a recursos del sistema.</p>
-          <p>Facilita el desenvolupament: Els programadors no han de preocupar-se per detalls de l’hardware.</p>
-          <p>Desavantatges:</p>
-          <p>Overhead d’execució: La interpretació o compilació JIT introdueixen latència.</p>
-          <p>Consum de recursos: Les MV solen requerir més memòria que els executables natius.</p>
+        <h3>5. Avantatges i desavantatges</h3>
+        <p>Avantatges:</p>
+        <p>Independència de plataforma: Escriu una vegada, executa en qualsevol lloc (Write Once, Run Anywhere).</p>
+        <p>Seguretat millorada: La MV controla l’accés a recursos del sistema.</p>
+        <p>Facilita el desenvolupament: Els programadors no han de preocupar-se per detalls de l’hardware.</p>
+        <p>Desavantatges:</p>
+        <p>Overhead d’execució: La interpretació o compilació JIT introdueixen latència.</p>
+        <p>Consum de recursos: Les MV solen requerir més memòria que els executables natius.</p>
       </div>
-  </section>
-  <section class="concept">
-    <div class="container">
+    </section>
+    <section class="concept">
+      <div class="container">
         <h3>6. Casos d’ús rellevants</h3>
         <p>JVM (Java Virtual Machine): L’exemple més conegut, ut</p>
         <p>CLR (Common Language Runtime): Base de .NET, suporta múltiples llenguatges com C# o F#.</p>
@@ -295,8 +310,8 @@
             <img src="imatge/f.png" alt="Diagrama del procés de codi intermedi" class="img-fluid">
           </div>
         </section>
-    </div>
-</section>
+      </div>
+    </section>
 
   </main>
 
@@ -333,7 +348,7 @@
         </div>
 
         <div class="col-lg-2 col-md-3 footer-links">
-          <h4>Contiguts</h4>
+          <h4>Continguts</h4>
           <ul>
             <li><i class="bi bi-chevron-right"></i> <a href="https://ca.wikipedia.org/wiki/Portada"
                 target="_blank">Viquipèdia</a></li>
@@ -407,5 +422,4 @@
 </body>
 
 
-    </html>
-
+</html>

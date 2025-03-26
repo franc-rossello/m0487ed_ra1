@@ -52,9 +52,9 @@
       <nav id="navmenu" class="navmenu">
         <ul>
           <li><a href="../index.html">Inici</a></li>
-          <li><a href="ra11/ra11.html">RA11</a></li>
+          <li><a href="../ra11/ra11.html">RA11</a></li>
           <li><a href="../ra12/ra12.html">RA12</a></li>
-          <li><a href="../ra13/ra13.html" class="active">RA13</a></li>
+          <li><a href="ra13/ra13.html" class="active">RA13</a></li>
           <li><a href="../ra14/ra14.html">RA14</a></li>
           <li><a href="../ra15/ra15.html">RA15</a></li>
           <li><a href="../ra16/ra16.html">RA16</a></li>
@@ -84,53 +84,62 @@
 
     <!-- Featured Services Section -->
 
-  <section class="concepts">
+    <section class="concepts">
       <div class="container">
 
         <div class="concept">
           <h2>Introducció al Desenvolupament d'un Programa Informàtic</h2>
-<p>En el desenvolupament de programari, un programa passa per diverses etapes abans de poder ser executat per un ordinador. Aquest procés inclou la creació del codi font, la seva conversió en codi objecte i, finalment, la generació d'un fitxer executable. A continuació, s'analitzen aquests tres conceptes en detall.</p>      </div>
+          <p>En el desenvolupament de programari, un programa passa per diverses etapes abans de poder ser executat per
+            un ordinador. Aquest procés inclou la creació del codi font, la seva conversió en codi objecte i, finalment,
+            la generació d'un fitxer executable. A continuació, s'analitzen aquests tres conceptes en detall.</p>
+        </div>
 
 
 
 
-          <div class="concept">
-            <h2>Codi Font</h2>
-            <p>El <strong>codi font</strong> és el conjunt d'instruccions escrites per un programador en un llenguatge de programació com C, Java, Python, etc. Aquest codi és llegible per humans i defineix la lògica i funcionalitat d'un programa.</p>
-            <p>Característiques principals del codi font:</p>
-            <ul>
-              <li>És llegible per humans.</li>
-              <li>Pot ser modificat i millorat fàcilment.</li>
-              <li>Es guarda en fitxers amb extensions com <code>.c</code>, <code>.java</code>, <code>.py</code>.</li>
-            </ul>
-            <p><strong>Exemple de codi font en C:</strong></p>
-            <pre><code>
+        <div class="concept">
+          <h2>Codi Font</h2>
+          <p>El <strong>codi font</strong> és el conjunt d'instruccions escrites per un programador en un llenguatge de
+            programació com C, Java, Python, etc. Aquest codi és llegible per humans i defineix la lògica i
+            funcionalitat d'un programa.</p>
+          <p>Característiques principals del codi font:</p>
+          <ul>
+            <li>És llegible per humans.</li>
+            <li>Pot ser modificat i millorat fàcilment.</li>
+            <li>Es guarda en fitxers amb extensions com <code>.c</code>, <code>.java</code>, <code>.py</code>.</li>
+          </ul>
+          <p><strong>Exemple de codi font en C:</strong></p>
+          <pre><code>
       #include &lt;stdio.h&gt;
       int main() {
           printf("Hola, món!\n");
           return 0;
       }
             </code></pre>
-          </div>
+        </div>
 
-          <div class="concept">
-            <h2>Codi Objecte</h2>
-            <p>El <strong>codi objecte</strong> és una versió binària del programa obtinguda després de la compilació del codi font. Tot i que és més proper al llenguatge màquina, encara no es pot executar directament sense ser enllaçat.</p>
-            <p>Característiques del codi objecte:</p>
-            <ul>
-              <li>És un conjunt d'instruccions en llenguatge màquina.</li>
-              <li>Necessita ser enllaçat amb altres fitxers per formar un executable.</li>
-              <li>Es guarda en fitxers amb extensions com <code>.o</code> o <code>.obj</code>.</li>
-            </ul>
-            <p><strong>Procés de compilació:</strong></p>
-            <p>Quan es compila el codi font d'un programa en C amb el compilador <code>gcc</code>, es genera un fitxer objecte:</p>
-            <pre><code>
+        <div class="concept">
+          <h2>Codi Objecte</h2>
+          <p>El <strong>codi objecte</strong> és una versió binària del programa obtinguda després de la compilació del
+            codi font. Tot i que és més proper al llenguatge màquina, encara no es pot executar directament sense ser
+            enllaçat.</p>
+          <p>Característiques del codi objecte:</p>
+          <ul>
+            <li>És un conjunt d'instruccions en llenguatge màquina.</li>
+            <li>Necessita ser enllaçat amb altres fitxers per formar un executable.</li>
+            <li>Es guarda en fitxers amb extensions com <code>.o</code> o <code>.obj</code>.</li>
+          </ul>
+          <p><strong>Procés de compilació:</strong></p>
+          <p>Quan es compila el codi font d'un programa en C amb el compilador <code>gcc</code>, es genera un fitxer
+            objecte:</p>
+          <pre><code>
       gcc -c programa.c -o programa.o
             </code></pre>
 
           <div class="concept">
             <h2>Fitxer Executable</h2>
-            <p>El <strong>fitxer executable</strong> és la versió final d'un programa que pot ser executada pel sistema operatiu. Es genera després d'enllaçar el codi objecte amb biblioteques necessàries.</p>
+            <p>El <strong>fitxer executable</strong> és la versió final d'un programa que pot ser executada pel sistema
+              operatiu. Es genera després d'enllaçar el codi objecte amb biblioteques necessàries.</p>
             <p>Característiques dels executables:</p>
             <ul>
               <li>Conté totes les instruccions necessàries per ser executat.</li>
@@ -148,17 +157,22 @@
 
           <div class="concept">
             <h2>Procés de Desenvolupament d'un Programa Informàtic</h2>
-            <p>El procés de creació d'un programa informàtic segueix diverses etapes que inclouen el desenvolupament, la compilació i l'enllaç. A continuació, es detallen aquestes etapes:</p>
+            <p>El procés de creació d'un programa informàtic segueix diverses etapes que inclouen el desenvolupament, la
+              compilació i l'enllaç. A continuació, es detallen aquestes etapes:</p>
             <ol>
-                <li><strong>Escriure el codi font:</strong> El programador crea el codi font que defineix la lògica del programa.</li>
-                <li><strong>Compilació:</strong> El compilador converteix el codi font en codi objecte. Aquesta etapa detecta errors sintàctics o lògics en el codi font.</li>
-                <li><strong>Enllaç (Linking):</strong> Els arxius de codi objecte es combinen amb llibreries externes per generar un programa complet.</li>
-                <li><strong>Creació de l'executable:</strong> El codi objecte es converteix en un fitxer executable que pot ser executat pel sistema operatiu.</li>
+              <li><strong>Escriure el codi font:</strong> El programador crea el codi font que defineix la lògica del
+                programa.</li>
+              <li><strong>Compilació:</strong> El compilador converteix el codi font en codi objecte. Aquesta etapa
+                detecta errors sintàctics o lògics en el codi font.</li>
+              <li><strong>Enllaç (Linking):</strong> Els arxius de codi objecte es combinen amb llibreries externes per
+                generar un programa complet.</li>
+              <li><strong>Creació de l'executable:</strong> El codi objecte es converteix en un fitxer executable que
+                pot ser executat pel sistema operatiu.</li>
             </ol>
             <p>Un cop completat el procés, el programa està llest per ser distribuït i executat pels usuaris.</p>
+          </div>
         </div>
-      </div>
-  </section>
+    </section>
 
   </main>
 
@@ -205,7 +219,7 @@
         </div>
 
         <div class="col-lg-2 col-md-3 footer-links">
-          <h4>Contiguts</h4>
+          <h4>Continguts</h4>
           <ul>
             <li><i class="bi bi-chevron-right"></i> <a href="https://ca.wikipedia.org/wiki/Portada"
                 target="_blank">Viquipèdia</a></li>
