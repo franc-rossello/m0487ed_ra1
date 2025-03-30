@@ -91,7 +91,7 @@
     <!-- Featured Services Section -->
 
     <section class="intro">
-      <div class="container">
+      <div class="container section-title" data-aos="fade-up">
         <h2>Introducció</h2>
         <p>La generació de codi intermedi és un pas fonamental en el procés de compilació i execució de programes en
           entorns moderns. Aquest codi intermedi actua com una capa d’abstracció entre el codi font escrit pel
@@ -102,9 +102,91 @@
         </p>
       </div>
     </section>
+    <section id="featured-services" class="featured-services section">
 
-    <section class="concepts">
       <div class="container">
+
+        <div class="row gy-4">
+
+          <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="100">
+            <div class="service-item item-cyan position-relative">
+              <div class="icon">
+                <i class="bi bi-code-slash"></i>
+              </div>
+              <a href="#Codi" class="stretched-link">
+                <h3>Què és el Codi Intermedi</h3>
+              </a>
+              <p>És una representació del programa font que no és directament executable
+                per la CPU.</p>
+            </div>
+          </div><!-- End Service Item -->
+
+          <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="200">
+            <div class="service-item item-orange position-relative">
+              <div class="icon">
+                <i class="bi bi-stars"></i>
+              </div>
+              <a href="#Carac" class="stretched-link">
+                <h3>Característiques principals</h3>
+              </a>
+              <p>Portabilitat, Abstracció del hardware, Optimització i Seguretat</p>
+            </div>
+          </div><!-- End Service Item -->
+
+
+          <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="300">
+            <div class="service-item item-red position-relative">
+              <div class="icon">
+                <i class="bi bi-cpu"></i>
+              </div>
+              <a href="#Funcio" class="stretched-link">
+                <h3>Funcionament de les MV</h3>
+              </a>
+              <p>Les màquines virtuals actuen com una capa d’execució que tradueix el codi intermedi a instruccions natives.</p>
+            </div>
+          </div><!-- End Service Item -->
+
+          <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="400">
+            <div class="service-item item-teal position-relative">
+              <div class="icon">
+                <i class="bi bi-diagram-3"></i>
+              </div>
+              <a href="#Fases" class="stretched-link">
+                <h3>Fases de la generació de codi intermedi</h3>
+              </a>
+              <p>Anàlisi lèxic i sintàctic</p>
+            </div>
+          </div><!-- End Service Item -->
+          <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="400">
+            <div class="service-item item-teal position-relative">
+              <div class="icon">
+                <i class="bi bi-plus-slash-minus"></i>
+              </div>
+              <a href="#AD" class="stretched-link">
+                <h3>Avantatges i desavantatges</h3>
+              </a>
+              
+            </div>
+          </div><!-- End Service Item -->
+          <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="400">
+            <div class="service-item item-teal position-relative">
+              <div class="icon">
+                <i class="bi bi-lightbulb"></i>
+              </div>
+              <a href="#Us" class="stretched-link">
+                <h3>Casos d’ús rellevants</h3>
+              </a>
+            </div>
+          </div><!-- End Service Item -->
+          
+        </div>
+      </div>
+    </section>
+    <br id="Codi">
+    <section class="concepts">
+      
+      <div class="container">
+        <div class="container section-title" data-aos="fade-up">
         <h3>1. Què és el codi intermedi?</h3>
 
         <div class="concept">
@@ -116,12 +198,11 @@
           <p>Exemples de codi intermedi:</p>
 
           <p>Bytecode de Java (.class): Utilitzat per la JVM.</p>
-          <p>CIL (Common Intermediate Language) de .NET: Executat per la CLR.</p>
-          <p>LLVM IR: Usat en el ecosistema LLVM per a optimitzacions multiplataforma.</p>
 
         </div>
-
+        <br id="Carac">
         <div class="concept">
+          <div class="container section-title" data-aos="fade-up">
           <h3>2. Característiques principals del codi intermedi</h3>
           <p>a) Portabilitat
             El codi intermedi permet que un programa es pugui executar en qualsevol plataforma que disposi d’una màquina
@@ -175,8 +256,9 @@
             </tbody>
           </table>
         </div>
-
+        <br id="Funcio">
         <div class="concept">
+          <div class="container section-title" data-aos="fade-up">
           <h3>3. Funcionament de les màquines virtuals (MV)</h3>
           <p>Les màquines virtuals actuen com una capa d’execució que tradueix el codi intermedi a instruccions natives.
             Hi ha dos enfocaments principals:</p>
@@ -226,12 +308,11 @@
         </div>
       </div>
     </section>
-
+    <br id="Fases">
     <section class="process">
       <div class="container">
+        <div class="container section-title" data-aos="fade-up">
         <h3>4. Fases de la generació de codi intermedi</h3>
-        <p>Anàlisi lèxic i sintàctic: Es tradueix el codi font a un arbre sintàctic (AST).
-        </p>
         <p>Anàlisi lèxic i sintàctic: Es tradueix el codi font a un arbre sintàctic (AST).
         </p>
         <p>Optimització: S’apliquen tècniques com eliminació de codi mort o inlining de funcions.</p>
@@ -253,9 +334,10 @@
 
       </div>
     </section>
-
+    <br id="AD">
     <section class="concept">
       <div class="container">
+        <div class="container section-title" data-aos="fade-up">
         <h3>5. Avantatges i desavantatges</h3>
         <p>Avantatges:</p>
         <p>Independència de plataforma: Escriu una vegada, executa en qualsevol lloc (Write Once, Run Anywhere).</p>
@@ -266,8 +348,10 @@
         <p>Consum de recursos: Les MV solen requerir més memòria que els executables natius.</p>
       </div>
     </section>
+    <br id="Us">
     <section class="concept">
       <div class="container">
+        <div class="container section-title" data-aos="fade-up">
         <h3>6. Casos d’ús rellevants</h3>
         <p>JVM (Java Virtual Machine): L’exemple més conegut, ut</p>
         <p>CLR (Common Language Runtime): Base de .NET, suporta múltiples llenguatges com C# o F#.</p>
@@ -307,7 +391,7 @@
         <section class="diagram">
           <div class="container text-center">
             <h3>Diagrama del procés de codi intermedi</h3>
-            <img src="imatge/f.png" alt="Diagrama del procés de codi intermedi" class="img-fluid">
+            <img src="img/f.png" alt="Diagrama del procés de codi intermedi" class="img-fluid">
           </div>
         </section>
       </div>

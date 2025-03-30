@@ -83,68 +83,14 @@
       </div>
     </div><!-- End Page Title -->
 
-    <!-- Featured Services Section -->
-    <section id="featured-services" class="featured-services section">
-
-      <div class="container">
-
-        <div class="row gy-4">
-
-          <div class="col-lg-3 col-md-6" data-aos="fade-up" data-aos-delay="100">
-            <div class="service-item item-cyan position-relative">
-              <div class="icon">
-                <i class="bi bi-activity"></i>
-              </div>
-              <h3>Processador</h3>
-              </a>
-              <p>🖥<strong>Processador: </strong>És el cervell del sistema informàtic.<br><br>Executa instruccions i
-                processa dades dels programes.
-              </p>
-            </div>
-          </div><!-- End Service Item -->
-
-          <div class="col-lg-3 col-md-6" data-aos="fade-up" data-aos-delay="200">
-            <div class="service-item item-orange position-relative">
-              <div class="icon">
-                <i class="bi bi-broadcast"></i>
-              </div>
-              <h3>Memòria</h3>
-              </a>
-              <p>🎛 <strong>Memòria: </strong>La RAM guarda dades temporals per a l’execució ràpida.<br><br>
-                La ROM conté instruccions bàsiques de l’ordinador. </p>
-            </div>
-          </div><!-- End Service Item -->
-
-          <div class="col-lg-3 col-md-6" data-aos="fade-up" data-aos-delay="300">
-            <div class="service-item item-teal position-relative">
-              <div class="icon">
-                <i class="bi bi-easel"></i>
-              </div>
-              <h3>Perifèrics</h3>
-              </a>
-              <p><strong>Perifèrics: </strong>són dispositius externs que s'utilitzen per interactuar amb el sistema
-                informàtic.<br><br>
-                Es poden classificar en dispositius d’entrada, sortida o emmagatzematge.</p>
-            </div>
-          </div><!-- End Service Item -->
-
-          <div class="col-lg-3 col-md-6" data-aos="fade-up" data-aos-delay="400">
-            <div class="service-item item-red position-relative">
-              <div class="icon">
-                <i class="bi bi-bounding-box-circles"></i>
-              </div>
-              <h3>Sistema Operatiu</h3>
-              </a>
-              <p><strong>Sistema Operatiu: </strong> és el programari que gestiona tots els components de
-                l'ordinador.<br><br>
-                Facilita la interacció entre els programes i el maquinari.</p>
-            </div>
-          </div><!-- End Service Item -->
-        </div>
-
-      </div>
-
-    </section><!-- /Featured Services Section -->
+    <div class="container section-title" data-aos="fade-up">
+      <br>
+      <h2 id="inici">Com interactuen els programes amb els elements de maquinari per funcionar?</h2>
+      <p class="lead">
+        Els programes informàtics necessiten interactuar de manera constant amb els components del sistema informàtic
+        per poder funcionar correctament. A continuació, es descriuen els components clau d'un sistema informàtic i com
+        es relacionen amb els programes per garantir el seu funcionament òptim.</p>
+    </div>
 
     <!-- Services Section -->
     <section id="services" class="services section">
@@ -159,11 +105,11 @@
                 <img src="img/services-1.jpg" class="img-fluid" alt="">
               </div>
               <div class="details">
-                <a href="img/services-1.jpg" class="stretched-link">
+                <a href="#processador" class="stretched-link">
                   <h3>Processador</h3>
                 </a>
                 <p>El seu paper principal és executar les instruccions dels programes, és a dir, realitzar els càlculs i
-                  operacions lògiques que els programes li indiquen.</p>
+                  operacions lògiques que els programes li indiquen.
                 </p>
               </div>
             </div>
@@ -175,11 +121,11 @@
                 <img src="img/services-2.jpg" class="img-fluid" alt="">
               </div>
               <div class="details">
-                <a href="img/services-2.jpg" class="stretched-link">
+                <a href="#memoria" class="stretched-link">
                   <h3>Memòria</h3>
                 </a>
-                <p>Quan un programa s’executa, es carrega a la memòria RAM perquè el processador pugui accedir-hi
-                  ràpidament i executar les seves instruccions.</p>
+                <p>La memòria és essencial perquè un programa pugui funcionar. Quan s'executa un programa, aquest
+                  necessita un espai on guardar dades temporals i instruccions.</p>
               </div>
             </div>
           </div><!-- End Service Item -->
@@ -190,10 +136,14 @@
                 <img src="img/services-3.jpg" class="img-fluid" alt="">
               </div>
               <div class="details">
-                <a href="img/services-3.jpg" class="stretched-link">
+                <a href="#periferics" class="stretched-link">
                   <h3>Perifèrics</h3>
                 </a>
-                <p>Els programes necessiten aquests components per interactuar amb l'usuari i amb el món exterior.</p>
+                <p>Els programes necessiten aquests components per interactuar amb l'usuari i amb el món exterior.
+                  Els Perifèrics són dispositius externs que s'utilitzen per interactuar amb el sistema
+                  informàtic.<br>
+                  Es poden classificar en dispositius d’entrada, sortida o emmagatzematge.
+                </p>
               </div>
             </div>
           </div><!-- End Service Item -->
@@ -204,12 +154,15 @@
                 <img src="img/services-4.jpg" class="img-fluid" alt="">
               </div>
               <div class="details">
-                <a href="img/services-4.jpg" class="stretched-link">
-                  <h3>Sistema Operativo</h3>
-                </a>
+                <!-- <a href="#SO" class="stretched-link"> -->
+                <h3>Sistema Operativo</h3>
+                <!--   </a> -->
                 <p>El SO s’encarrega de gestionar la memòria, controlar els dispositius d’entrada i sortida i gestionar
-                  els processos.</p>
-                <a href="img/services-4.jpg" class="stretched-link"></a>
+                  els processos.
+                  El SO és el programari que gestiona tots els components de
+                  l'ordinador.<br>
+                  Facilita la interacció entre els programes i el maquinari.
+                </p>
               </div>
             </div>
           </div><!-- End Service Item -->
@@ -220,80 +173,190 @@
 
     </section><!-- /Services Section -->
 
+    <br id="processador">
+    <section id="service-details" class="service-details section">
+      <div class="container">
+        <div class="row">
+          <div data-aos="fade-up" data-aos-delay="200">
+            <img src="../assets/img/services.jpg" alt="" class="img-fluid services-img">
+            <h3>Funcionament Processador</h3>
+            <h4>Cicle d'Execució</h4>
+            <ul>
+              <li><i class="bi bi-check-circle"></i> <span>Fetch (obtenir): El processador carrega una instrucció des de
+                  la memòria.</span></li>
+
+              <li><i class="bi bi-check-circle"></i> <span>Decode (decodificar): El processador interpreta la instrucció
+                  per entendre quin tipus d'operació ha
+                  de realitzar..</span></li>
+              <li><i class="bi bi-check-circle"></i> <span>Execute (executar):El processador porta a terme l'operació
+                  que s'indica en la instrucció (per
+                  exemple, una operació aritmètica, lògica, etc.).</span></li>
+            </ul>
+            <h4>Paral·lelisme</h4>
+            <p>Els processadors moderns poden executar múltiples instruccions alhora gràcies al
+              paral·lelisme. Això es fa possible a través de:</p>
+            <ul>
+              <li><i class="bi bi-check-circle"></i> <span>Múltiples Nuclis:
+                  Diverses unitats de processament dins d'un mateix xip que poden executar tasques
+                  simultàniament.</span></li>
+              <li><i class="bi bi-check-circle"></i> <span>Pipelining:
+                  Tècnica on es preparen diverses instruccions mentre es realitza una altra, com una
+                  cadena de muntatge.</span></li>
+              <li><i class="bi bi-check-circle"></i> <span>Hyper-Threading: Permet a cada nucli físic processar diversos
+                  fils d'execució simultàniament.</span></li>
+
+            </ul>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <br id="memoria">
+    <section id="service-details" class="service-details section">
+      <div class="container">
+        <div class="row">
+          <div data-aos="fade-up" data-aos-delay="200">
+            <img src="../assets/img/services.jpg" alt="" class="img-fluid services-img">
+            <h3>Tipus de Memòria</h3>
+            <h4>RAM Random Access Memory</h4>
+            <ul>
+              <li><i class="bi bi-check-circle"></i> <span>Memòria de lectura i escriptura.</span></li>
+              <li><i class="bi bi-check-circle"></i> <span>Emmagatzema dades temporals.</span></li>
+              <li><i class="bi bi-check-circle"></i> <span>Esborra quan s'apaga l'ordinador.</span></li>
+              <li><i class="bi bi-check-circle"></i> <span>Accés ràpid pel processador.</span></li>
+
+            </ul>
+            <h4>ROM Read-Only Memory</h4>
+            <ul>
+              <li><i class="bi bi-check-circle"></i> <span>Emmagatzema dades permanents.</span></li>
+              <li><i class="bi bi-check-circle"></i> <span>No es modifica (només lectura).</span></li>
+              <li><i class="bi bi-check-circle"></i> <span>Conserva dades sense energia.</span></li>
+              <li><i class="bi bi-check-circle"></i> <span>Conté firmware bàsic.</span></li>
+
+            </ul>
+            <h4>Memòria Flash</h4>
+            <ul>
+              <li><i class="bi bi-check-circle"></i> <span>Conserva dades sense energia.</span></li>
+              <li><i class="bi bi-check-circle"></i> <span>Utilitzada en USB, SSD, targetes.</span></li>
+              <li><i class="bi bi-check-circle"></i> <span>Més ràpida que discs durs.</span></li>
+              <li><i class="bi bi-check-circle"></i> <span>Resistent als cops.</span></li>
+
+            </ul>
+            <h4>Memòria Virtual.</h4>
+            <ul>
+              <li><i class="bi bi-check-circle"></i> <span>Utilitza espai del disc del sistema o memòries flash.</span>
+              </li>
+              <li><i class="bi bi-check-circle"></i> <span>Permet executar més programes.</span></li>
+              <li><i class="bi bi-check-circle"></i> <span>Més lent que la RAM física.</span></li>
+              <li><i class="bi bi-check-circle"></i> <span>Gestió pel sistema operatiu.</span></li>
+
+            </ul>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <br id="periferics">
+    <section id="service-details" class="service-details section">
+      <div class="container">
+        <div class="row">
+          <div data-aos="fade-up" data-aos-delay="200">
+            <img src="../assets/img/services.jpg" alt="" class="img-fluid services-img">
+            <h3>Tipus de Perifèrics</h3>
+            <h4>Perifèrics d'Entrada: Permeten introduir dades o ordres.</h4>
+            <ul>
+              <li><i class="bi bi-keyboard me-2"></i> <span>Teclat</span></li>
+              <li><i class="bi bi-mouse me-2"></i>Ratolí</span></li>
+              <li><i class="bi bi-phone me-2"></i>Pantalla tàctil</span></li>
+              <li><i class="bi bi-hdmi me-2"></i>Escàner</span></li>
+
+            </ul>
+            <h4>Perifèrics de Sortida: Mostren o envien dades processades.</h4>
+            <ul>
+              <li><i class="bi bi-display me-2"></i> Monitor</li>
+              <li><i class="bi bi-printer me-2"></i> Impressora</li>
+              <li><i class="bi bi-speaker me-2"></i> Altaveus</li>
+              <li><i class="bi bi-projector me-2"></i> Projector</li>
+
+            </ul>
+            <h4>Emmagatzematge: Guarden dades permanentment.</h4>
+            <ul>
+              <li><i class="bi bi-hdd me-2"></i> Disc dur (HDD)</li>
+              <li><i class="bi bi-device-ssd me-2"></i> Unitat SSD</li>
+              <li><i class="bi bi-disc-fill me-2"></i> Discs òptics</li>
+              <li><i class="bi bi-usb-drive me-2"></i> Memòries USB</li>
+
+            </ul>
+            <h4>Comunicació: Transferència de dades</h4>
+            <ul>
+              <li><i class="bi bi-wifi me-2"></i> Adaptador Wi-Fi</li>
+              <li><i class="bi bi-usb-plug me-2"></i> Ports USB</li>
+              <li><i class="bi bi-bluetooth me-2"></i> Bluetooth</li>
+              <li><i class="bi bi-ethernet me-2"></i> Xarxa cablejada</li>
+
+            </ul>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!--  <br id="SO">
+    <section id="service-details" class="service-details section">
+      <div class="container">
+        <div class="row">
+          <div data-aos="fade-up" data-aos-delay="200">
+            <img src="../assets/img/services.jpg" alt="" class="img-fluid services-img">
+            <h3>Eines d'edició i entorns de desenvolupament (IDE)</h3>
+            <h4>Característiques</h4>
+            <ul>
+              <li><i class="bi bi-check-circle"></i> <span>Editor de codi amb ressaltat de sintaxi i
+                  autocompletat.</span></li>
+              <li><i class="bi bi-check-circle"></i> <span>Gestió de projectes per organitzar els fitxers del
+                  programa.</span></li>
+              <li><i class="bi bi-check-circle"></i> <span>Depurador integrat per trobar errors en temps
+                  d'execució.</span></li>
+            </ul>
+            <h4>Exemples d'IDEs populars i llenguatges destinats.</h4>
+            <ul>
+              <li><i class="bi bi-check-circle"></i> <span>Eclipse (Java, C++, PHP)</span></li>
+              <li><i class="bi bi-check-circle"></i> <span>IntelliJ IDEA (Java, Kotlin)</span></li>
+              <li><i class="bi bi-check-circle"></i> <span>NetBeans (Java, PHP, C++)</span></li>
+              <li><i class="bi bi-check-circle"></i> <span>Visual Studio Code (multillenguatge).</span></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </section> -->
+
+
     <!-- Pricing Section -->
     <section id="pricing" class="pricing section">
 
       <div class="container section-title" data-aos="fade-up">
         <h2>Mapa Conceptual</h2>
-        <p>Mapa mental que resumeix els components clau d'un sistema informàtic.</p>
+        <p>Relació entre els components clau d'un sistema informàtic.</p>
       </div><!-- End Section Title -->
 
       <div class="container" data-aos="fade-up" data-aos-delay="100">
 
-        <div class="row gy-4">
-
-          <div class="col-lg-6" data-aos="zoom-in" data-aos-delay="200">
-            <div class="service-item position-relative">
-              <div class="img">
-                <img src="img/mapa-1.jpg" class="img-fluid" alt="">
-              </div>
-              <div class="details">
-                <a href="img/mapa-1.jpg" class="stretched-link">
-                  <h3><br>Processador</h3>
-                </a>
-              </div>
-            </div>
-          </div><!-- End Service Item -->
-
-          <div class="col-lg-6" data-aos="zoom-in" data-aos-delay="300">
-            <div class="service-item position-relative">
-              <div class="img">
-                <img src="img/mapa-2.jpg" class="img-fluid" alt="">
-              </div>
-              <div class="details">
-                <a href="img/mapa-2.jpg" class="stretched-link">
-                  <h3><br>Memòria</h3>
-                </a>
-              </div>
-            </div>
-          </div><!-- End Service Item -->
-
-          <div class="col-lg-6" data-aos="zoom-in" data-aos-delay="400">
-            <div class="service-item position-relative">
-              <div class="img">
-                <img src="img/mapa-3.jpg" class="img-fluid" alt="">
-              </div>
-              <div class="details">
-                <a href="img/mapa-3.jpg" class="stretched-link">
-                  <h3><br>Perifèrics</h3>
-                </a>
-              </div>
-            </div>
-          </div><!-- End Service Item -->
-
-          <div class="col-lg-6" data-aos="zoom-in" data-aos-delay="500">
-            <div class="service-item position-relative">
-              <div class="img">
-                <img src="img/mapa-4.jpg" class="img-fluid" alt="">
-              </div>
-              <div class="details">
-                <a href="img/mapa-4.jpg" class="stretched-link">
-                  <h3><br>Sistema Operativo</h3>
-                </a>
-                <a href="img/mapa-4.jpg" class="stretched-link"></a>
-              </div>
-            </div>
-          </div><!-- End Service Item -->
-
+        <div class="mt-4 text-center">
+          <img src="img/mapa_r11.jpg" alt="">
         </div>
 
-      </div><br><br>
+      </div>
+      <div class="container" data-aos="fade-up" data-aos-delay="200">
 
-      <a target="_blank" href="ra11.pdf">
-        <img src="img/pdf.png" alt="ra11" style="width: 100px; display: block; margin: 0 auto;">
-      </a><br>
-      <p style="display: block; margin: auto; text-align: center;">Aqui teniu un <strong>PDF</strong> amb tota la
-        informació que hem recollit d'aquesta <strong>RA11.</strong></p>
+        <div class="mt-4 text-center">
+          <a target="_blank" href="ra11.pdf">
+            <img src="img/pdf.png" alt="ra11">
+          </a><br><br>
+          <p>Resum <strong>PDF</strong> amb tota la
+            informació que hem recollit d'aquesta <strong>RA11.</strong></p>
+        </div>
+
+      </div>
+
+
 
     </section><!-- /Pricing Section -->
 

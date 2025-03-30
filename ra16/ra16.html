@@ -157,24 +157,24 @@
           <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="100">
             <div class="service-item item-cyan position-relative">
               <div class="icon">
-                <i class="bi bi-code-square"></i>
+                <i class="bi bi-building-gear"></i>
               </div>
               <a href="#build" class="stretched-link">
                 <h3>Eines de compilació i construcció</h3>
               </a>
-              <p>xxx</p>
+              <p>Automatitzen el procés de compilació i gestió de dependències per a diferents llenguatges.</p>
             </div>
           </div><!-- End Service Item -->
 
           <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="200">
             <div class="service-item item-orange position-relative">
               <div class="icon">
-                <i class="bi bi-git"></i>
+                <i class="bi bi-link"></i>
               </div>
               <a href="#paquets" class="stretched-link">
                 <h3>Eines de gestió de dependències i paquets</h3>
               </a>
-              <p>xxx</p>
+              <p>Faciliten la instal·lació i gestió de llibreries externes per als projectes.</p>
             </div>
           </div><!-- End Service Item -->
 
@@ -182,12 +182,12 @@
           <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="300">
             <div class="service-item item-red position-relative">
               <div class="icon">
-                <i class="bi bi-bug"></i>
+                <i class="bi bi-arrow-repeat"></i>
               </div>
               <a href="#cicd" class="stretched-link">
                 <h3>Eines per a la integració i desplegament continu</h3>
               </a>
-              <p>xxx
+              <p>Automatitzen el procés de proves, compilació i desplegament del programari.
               </p>
             </div>
           </div><!-- End Service Item -->
@@ -284,8 +284,8 @@
             <h4>Característiques</h4>
 
             <ul>
-              <li><i class="bi bi-check-circle"></i> <span>Gestió de tasques i assignació d’equips.</span></li>
-              <li><i class="bi bi-check-circle"></i> <span>Seguiment de l’estat del projecte amb gràfics i
+              <li><i class="bi bi-check-circle"></i> <span>Gestió de tasques i assignació d'equips.</span></li>
+              <li><i class="bi bi-check-circle"></i> <span>Seguiment de l'estat del projecte amb gràfics i
                   taulers.</span></li>
               <li><i class="bi bi-check-circle"></i> <span>Integració amb eines de control de versions.</span></li>
             </ul>
@@ -301,16 +301,76 @@
         </div>
       </div>
     </section>
-
-
-    <div class="container section-title" style="padding-bottom:0px;padding-top:60px;">
-      <h2>MAPA CONCEPTUAL: Eines utilitzades en el desenvolupament de programari</h2>
-    </div>
-
-    <section id="diagram" class="diagram-section text-center">
+    
+    <br id="build">
+    <section id="service-details" class="service-details section">
       <div class="container">
-        <img src="Eines_utilitzades_desenvolupament_de_programari.jpg" class="img-fluid mt-3"
-          alt="Eines de desenvolupament">
+        <div class="row">
+          <div data-aos="fade-up" data-aos-delay="200">
+            <img src="../assets/img/services.jpg" alt="" class="img-fluid services-img">
+            <h3>Eines de compilació i construcció (Build Tools)</h3>
+            <h4>Característiques</h4>
+            <ul>
+              <li><i class="bi bi-check-circle"></i> <span>Automatització del procés de compilació.</span></li>
+              <li><i class="bi bi-check-circle"></i> <span>Gestió de dependències per facilitar l'ús de llibreries externes.</span></li>
+              <li><i class="bi bi-check-circle"></i> <span>Generació d'arxius executables i paquets per a la seva distribució.</span></li>
+            </ul>
+            <h4>Exemples</h4>
+            <ul>
+              <li><i class="bi bi-check-circle"></i> <span>Maven (Java)</span></li>
+              <li><i class="bi bi-check-circle"></i> <span>Gradle (Java, Kotlin)</span></li>
+              <li><i class="bi bi-check-circle"></i> <span>Makefile (C, C++)</span></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </section>
+    
+    <br id="paquets">
+    <section id="service-details" class="service-details section">
+      <div class="container">
+        <div class="row">
+          <div data-aos="fade-up" data-aos-delay="200">
+            <img src="../assets/img/services.jpg" alt="" class="img-fluid services-img">
+            <h3>Eines de gestió de dependències i paquets</h3>
+            <h4>Característiques</h4>
+            <ul>
+              <li><i class="bi bi-check-circle"></i> <span>Instal·lació i gestió de llibreries de manera automatitzada.</span></li>
+              <li><i class="bi bi-check-circle"></i> <span>Evita conflictes de versions entre llibreries.</span></li>
+            </ul>
+            <h4>Exemples</h4>
+            <ul>
+              <li><i class="bi bi-check-circle"></i> <span>npm (JavaScript)</span></li>
+              <li><i class="bi bi-check-circle"></i> <span>pip (Python)</span></li>
+              <li><i class="bi bi-check-circle"></i> <span>Composer (PHP)</span></li>
+              <li><i class="bi bi-check-circle"></i> <span>Gradle/Maven (Java)</span></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </section>
+    
+    <br id="cicd">
+    <section id="service-details" class="service-details section">
+      <div class="container">
+        <div class="row">
+          <div data-aos="fade-up" data-aos-delay="200">
+            <img src="../assets/img/services.jpg" alt="" class="img-fluid services-img">
+            <h3>Eines per a la integració i desplegament continu (CI/CD)</h3>
+            <h4>Característiques</h4>
+            <ul>
+              <li><i class="bi bi-check-circle"></i> <span>Execució automàtica de proves en cada canvi de codi.</span></li>
+              <li><i class="bi bi-check-circle"></i> <span>Compilació i generació de paquets de manera automatitzada.</span></li>
+              <li><i class="bi bi-check-circle"></i> <span>Desplegament automàtic en servidors de producció.</span></li>
+            </ul>
+            <h4>Exemples</h4>
+            <ul>
+              <li><i class="bi bi-check-circle"></i> <span>Jenkins</span></li>
+              <li><i class="bi bi-check-circle"></i> <span>GitHub Actions</span></li>
+              <li><i class="bi bi-check-circle"></i> <span>Travis CI</span></li>
+            </ul>
+          </div>
+        </div>
       </div>
     </section>
 

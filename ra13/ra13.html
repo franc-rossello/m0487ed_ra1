@@ -71,7 +71,7 @@
     <!-- Page Title -->
     <div class="page-title dark-background">
       <div class="container position-relative">
-        <h1>RA13 Diferència els conceptes de codi font, objecte i executable.</h1>
+        <h1>RA13 - Diferencia els conceptes de codi font, objecte i executable.</h1>
         <!-- <p>Esse dolorum voluptatum ullam est sint nemo et est ipsa porro placeat quibusdam quia assumenda numquam molestias.</p>
         <nav class="breadcrumbs">
           <ol>
@@ -81,110 +81,201 @@
         </nav> -->
       </div>
     </div><!-- End Page Title -->
+    <!-- Section Title -->
+    <br>
+    <br>
+    <br>
+    <div class="container section-title" data-aos="fade-up">
+      <h2>Introducció</h2>
+      <p class="lead">Els tres components (codi font, codi objecte i arxiu executable) són fonamentals per al
+        desenvolupament de programari. Cada un té un propòsit específic en el procés de transformació de les idees d'un
+        programador en un programa que es pot utilitzar en un ordinador.
+        <br>
+        <br>El codi font és on comença tot, el codi objecte és una representació intermèdia que es genera durant la
+        compilació, i l'arxiu executable és el producte final que el sistema operatiu pot executar.
+        Comprendre aquests tres conceptes és crucial per als desenvolupadors, ja que els permet entendre com funciona el
+        procés de creació de programari i com optimitzar i depurar els seus programes.<br> <br>
+        En el següent tema aprofundirem en el tema, veient altres possibilitats amb els programes interpretats i
+        executats en màquines virtuals.
+      </p>
+    </div><!-- End Section Title -->
+    <!-- Pricing Section -->
+    <section id="pricing" class="pricing section">
+
+    </section><!-- /Pricing Section -->
+
 
     <!-- Featured Services Section -->
+    <!-- Section Title -->
+    <div class="container section-title" data-aos="fade-up">
+      <h2>Diferències Clau.</h2>
 
-    <section class="concepts">
+      <p>El codi font és llegible i modificable per humans, però necessita ser compilat. El codi objecte és binari i
+        entenedor per la màquina. L’arxiu executable és el resultat final</p>
+    </div><!-- End Section Title -->
+    <section id="featured-services" class="featured-services section">
+
       <div class="container">
 
-        <div class="concept">
-          <h2>Introducció al Desenvolupament d'un Programa Informàtic</h2>
-          <p>En el desenvolupament de programari, un programa passa per diverses etapes abans de poder ser executat per
-            un ordinador. Aquest procés inclou la creació del codi font, la seva conversió en codi objecte i, finalment,
-            la generació d'un fitxer executable. A continuació, s'analitzen aquests tres conceptes en detall.</p>
+        <div class="row gy-4">
+
+          <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="100">
+            <div class="service-item item-cyan position-relative">
+              <div class="icon">
+                <i class="bi bi-code"></i>
+              </div>
+              <h3>Codi Font</h3>
+              <p>És el conjunt d'instruccions llegibles per humans. Necessita ser compilat per convertir-se en alguna
+                cosa que la màquina pugui executar. És un arxiu de text.</p>
+            </div>
+          </div><!-- End Service Item -->
+
+          <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="100">
+            <div class="service-item item-cyan position-relative">
+              <div class="icon">
+                <i class="bi bi-file-binary"></i>
+              </div>
+              <h3>Codi Objecte</h3>
+              <p>És el resultat intermedi de la compilació del codi font. Conté instruccions binàries que la màquina pot
+                entendre, però no es pot executar directament sense enllaçació addicional.</p>
+            </div>
+          </div><!-- End Service Item -->
+
+          <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="100">
+            <div class="service-item item-cyan position-relative">
+              <div class="icon">
+                <i class="bi bi-file-earmark-play"></i>
+              </div>
+              <h3>Arxiu Executable</h3>
+              <p>És el programa final, llest per ser executat per la màquina. Es genera a partir del codi objecte
+                mitjançant el procés d'enllaç.</p>
+            </div>
+          </div><!-- End Service Item -->
+        </div>
+      </div>
+
+    </section><!-- /Featured Services Section -->
+
+    <!-- Section Title -->
+    <div class="container section-title" data-aos="fade-up">
+
+      <h2>Exemples de codi</h2>
+      <p>Aquí veurem algunes diferències per a entendre millor els tipus de fitxers.</p>
+    </div><!-- End Section Title -->
+
+    <!-- Services Section -->
+    <section id="services" class="services section">
+
+      <div class="container" data-aos="fade-up" data-aos-delay="100">
+
+        <div class="row gy-4">
+
+          <div class="col-lg-6" data-aos="zoom-in" data-aos-delay="200">
+            <div class="service-item position-relative">
+              <div class="img">
+                <img src="img/blau.png" class="img-fluid" alt="">
+              </div>
+              <div class="details">
+                <a href="https://www.ibm.com/docs/es/i/7.5?topic=area-source-code-samples" class="stretched-link">
+                  <h3>Exemple de codi font en C</h3>
+                </a>
+
+
+                <pre class="text-start"><code>
+    #include &lt;stdio.h&gt;
+        void main() {
+            printf("Hola, món!\n");
+        }
+                    </code></pre>
+              </div>
+            </div>
+          </div><!-- End Service Item -->
+
+          <div class="col-lg-6" data-aos="zoom-in" data-aos-delay="400">
+            <div class="service-item position-relative">
+              <div class="img">
+                <img src="img/vermell.png" class="img-fluid" alt="">
+              </div>
+              <div class="details">
+                <a href="https://www.ibm.com/docs/es/i/7.5?topic=area-source-code-samples" class="stretched-link">
+                  <h3>Arxius Codi Font</h3>
+                </a>
+
+
+                <p class="text-start">.c per C
+                  <br>.cpp per C++
+                  <br>.java per Java
+                  <br>.py per Python
+                  <br>.js per JavaScript<br><br>
+                </p>
+              </div>
+            </div>
+          </div><!-- End Service Item -->
+
+
+          <div class="col-lg-6" data-aos="zoom-in" data-aos-delay="300">
+            <div class="service-item position-relative">
+              <div class="img">
+                <img src="img/taronja.png" class="img-fluid" alt="">
+              </div>
+              <div class="details">
+                <a href="https://fineproxy.org/es/wiki/object-code/" class="stretched-link">
+                  <h3>Codi Objecte</h3>
+                </a>
+                <p class="text-start">Quan es compila el codi font d'un programa en C amb el compilador
+                  <code>gcc</code>, es genera un
+                  fitxer
+                  objecte:
+                </p>
+
+                <pre><strong><code>gcc -c programa.c -o programa.o</code></strong></pre>
+                <p class="text-start">.o en sistemes Unix/Linux
+                  <br>.obj en sistemes Windows<br><br><br>
+                </p>
+              </div>
+            </div>
+          </div><!-- End Service Item -->
+
+          <div class="col-lg-6" data-aos="zoom-in" data-aos-delay="500">
+            <div class="service-item position-relative">
+              <div class="img">
+                <img src="img/verd.png" class="img-fluid" alt="">
+              </div>
+              <div class="details">
+                <a href="https://www.ninjaone.com/es/it-hub/endpoint-management/archivo-ejecutable/"
+                  class="stretched-link">
+                  <h3>Fitxers Executables</h3>
+                </a>
+                <p class="text-start">
+                  El fitxer executable és la versió final d'un programa que pot ser executada pel sistema operatiu. Es
+                  genera després d'enllaçar el codi objecte amb biblioteques necessàries.</p><pre><strong><code>gcc programa.o -o programa.bin</code></strong></pre>
+                <br>.out o .bin en sistemes Unix/Linux.
+                <br>.exe en sistemes Windows.
+
+
+              </div>
+            </div>
+          </div><!-- End Service Item -->
+
         </div>
 
+      </div>
 
+    </section><!-- /Services Section -->
 
+    <!-- Section Title -->
+    <div class="container section-title" data-aos="fade-up">
+      <h2>Mapa Conceptual</h2>
+      <p>Aquest és el mapa conceptual de la nostra RA.</p>
+    </div><!-- End Section Title -->
 
-        <div class="concept">
-          <h2>Codi Font</h2>
-          <p>El <strong>codi font</strong> és el conjunt d'instruccions escrites per un programador en un llenguatge de
-            programació com C, Java, Python, etc. Aquest codi és llegible per humans i defineix la lògica i
-            funcionalitat d'un programa.</p>
-          <p>Característiques principals del codi font:</p>
-          <ul>
-            <li>És llegible per humans.</li>
-            <li>Pot ser modificat i millorat fàcilment.</li>
-            <li>Es guarda en fitxers amb extensions com <code>.c</code>, <code>.java</code>, <code>.py</code>.</li>
-          </ul>
-          <p><strong>Exemple de codi font en C:</strong></p>
-          <pre><code>
-      #include &lt;stdio.h&gt;
-      int main() {
-          printf("Hola, món!\n");
-          return 0;
-      }
-            </code></pre>
-        </div>
-
-        <div class="concept">
-          <h2>Codi Objecte</h2>
-          <p>El <strong>codi objecte</strong> és una versió binària del programa obtinguda després de la compilació del
-            codi font. Tot i que és més proper al llenguatge màquina, encara no es pot executar directament sense ser
-            enllaçat.</p>
-          <p>Característiques del codi objecte:</p>
-          <ul>
-            <li>És un conjunt d'instruccions en llenguatge màquina.</li>
-            <li>Necessita ser enllaçat amb altres fitxers per formar un executable.</li>
-            <li>Es guarda en fitxers amb extensions com <code>.o</code> o <code>.obj</code>.</li>
-          </ul>
-          <p><strong>Procés de compilació:</strong></p>
-          <p>Quan es compila el codi font d'un programa en C amb el compilador <code>gcc</code>, es genera un fitxer
-            objecte:</p>
-          <pre><code>
-      gcc -c programa.c -o programa.o
-            </code></pre>
-
-          <div class="concept">
-            <h2>Fitxer Executable</h2>
-            <p>El <strong>fitxer executable</strong> és la versió final d'un programa que pot ser executada pel sistema
-              operatiu. Es genera després d'enllaçar el codi objecte amb biblioteques necessàries.</p>
-            <p>Característiques dels executables:</p>
-            <ul>
-              <li>Conté totes les instruccions necessàries per ser executat.</li>
-              <li>El sistema operatiu pot carregar-lo directament.</li>
-              <li>Extensions habituals: <code>.exe</code> en Windows, sense extensió en Linux i macOS.</li>
-            </ul>
-            <p><strong>Generació de l'executable:</strong></p>
-            <pre><code>
-      gcc programa.o -o programa
-            </code></pre>
-            <br><br>
-            <img src="capturadiagrama.png" alt="diagrama">
-            <br><br>
-          </div>
-
-          <div class="concept">
-            <h2>Procés de Desenvolupament d'un Programa Informàtic</h2>
-            <p>El procés de creació d'un programa informàtic segueix diverses etapes que inclouen el desenvolupament, la
-              compilació i l'enllaç. A continuació, es detallen aquestes etapes:</p>
-            <ol>
-              <li><strong>Escriure el codi font:</strong> El programador crea el codi font que defineix la lògica del
-                programa.</li>
-              <li><strong>Compilació:</strong> El compilador converteix el codi font en codi objecte. Aquesta etapa
-                detecta errors sintàctics o lògics en el codi font.</li>
-              <li><strong>Enllaç (Linking):</strong> Els arxius de codi objecte es combinen amb llibreries externes per
-                generar un programa complet.</li>
-              <li><strong>Creació de l'executable:</strong> El codi objecte es converteix en un fitxer executable que
-                pot ser executat pel sistema operatiu.</li>
-            </ol>
-            <p>Un cop completat el procés, el programa està llest per ser distribuït i executat pels usuaris.</p>
-          </div>
-        </div>
-    </section>
+    <div class="img">
+      <img src="mapa_ra13.png" class="img-fluid" alt="">
+    </div>
+    <br>
+    <br>
 
   </main>
-
-
-
-
-
-
-
-
-
-
 
   <footer id="footer" class="footer dark-background">
 
@@ -219,7 +310,7 @@
         </div>
 
         <div class="col-lg-2 col-md-3 footer-links">
-          <h4>Continguts</h4>
+          <h4>Contiguts</h4>
           <ul>
             <li><i class="bi bi-chevron-right"></i> <a href="https://ca.wikipedia.org/wiki/Portada"
                 target="_blank">Viquipèdia</a></li>
